@@ -19,6 +19,9 @@ import java.io.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.ButtonType;
 
 public class ViewTaskController {
 
@@ -131,9 +134,34 @@ public class ViewTaskController {
             ((Stage) table.getScene().getWindow()).close();
         }catch (IOException error){
             error.printStackTrace();
-}
-}
+        }
+    }
 
+    @FXML
+    public void clickingDelete() {
+        // 1. Get Selected Item
+        ToDo selectTask = table.getSelectionModel().getSelectedItem();
+
+        if (selectTask == null) {
+            Alert alert = new Alert(AlertType.WARNING);
+            alert.setTitle("Warning");
+            alert.setHeaderText("Select a task");
+            alert.setContentText("Please select a task to delete.");
+            alert.showAndWait();
+            return;
+        }
+
+        Alert confirm = new Alert(AlertType.CONFIRMATION);
+        confirm.setTitle("Confirm Delete");
+        confirm.setHeaderText(null);
+        confirm.setContentText("Are you sure you want to delete this task?");
+
+        Optional<ButtonType> result = confirm.showAndWait();
+        if (result.isPresent() && result.get() == ButtonType.OK) {
+            allTasks.remove(selectTask);
+            saveTasks();
+        }
+    }
 
     // ⭐ 3. FIXED: Removed createGson() and used standard GsonBuilder
     private void saveTasks() {

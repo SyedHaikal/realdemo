@@ -1,11 +1,11 @@
 [
   {
-    "title": "Binge Anime",
+    "title": "Binge Animes",
     "description": "Mobile Suit Gundam",
     "dueDate": "2025-11-30",
     "category": "Personal",
     "priority": 4,
-    "completed": false
+    "completed": true
   },
   {
     "title": "United Nations",
@@ -13,7 +13,7 @@
     "dueDate": "2025-11-30",
     "category": "Health",
     "priority": 4,
-    "completed": false
+    "completed": true
   },
   {
     "title": "zxcas",
@@ -21,7 +21,7 @@
     "dueDate": "2025-11-14",
     "category": "Other",
     "priority": 2,
-    "completed": false
+    "completed": true
   },
   {
     "title": "affdasfa",
@@ -29,7 +29,7 @@
     "dueDate": "2025-11-28",
     "category": "Health",
     "priority": 4,
-    "completed": false
+    "completed": true
   },
   {
     "title": "hjv",
@@ -37,7 +37,7 @@
     "dueDate": "2025-11-28",
     "category": "Personal",
     "priority": 1,
-    "completed": false
+    "completed": true
   },
   {
     "title": "Yedqau",
@@ -45,22 +45,14 @@
     "dueDate": "2025-11-28",
     "category": "Other",
     "priority": 1,
-    "completed": false
+    "completed": true
   },
   {
-    "title": "Create Anime",
-    "description": "Mobile Suit Gundam",
-    "dueDate": "2025-11-30",
-    "category": "Personal",
-    "priority": 4,
-    "completed": false
-  },
-  {
-    "title": "Test2",
-    "description": "1",
-    "dueDate": "2025-11-30",
-    "category": "Finance",
-    "priority": 3,
-    "completed": false
+    "title": "Test3",
+    "description": "2",
+    "dueDate": "2025-11-29",
+    "category": "Work",
+    "priority": 1,
+    "completed": true
   }
 ]
